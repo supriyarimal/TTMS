@@ -1,0 +1,993 @@
+
+html, body{
+	font-size: 100%;
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+section{
+    padding:2rem 9%;
+  }
+  
+a:hover{
+ text-decoration:none;
+}
+input[type="button"],input[type="submit"],li.parallelogram{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Roboto Condensed', sans-serif;
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+
+:root{
+      --main-color: #013376;
+      --red: #d60b18;
+      --white: #f2f2f2;
+      --green: #409529;
+  }
+/*-- top-header --*/
+i.fa.fa-home {
+    font-size: 24px;
+}
+.top-header {
+    background-color:var(--green) ;
+    border-bottom: 0 none;
+	height: 36px;
+    line-height: 35px;
+}
+ul.tp-hd-lft{
+    float: left;
+}
+ul.tp-hd-lft li {
+    display: inline-block;
+}
+li.hm,li.prnt {
+    margin-right: 12px;
+}
+ul.tp-hd-lft a {
+    font-size: 13px;
+    font-weight: 600;
+	color:#fff;
+}
+ul.tp-hd-rgt{
+    float:right;
+}
+ul.tp-hd-rgt li {
+    display: inline-block;
+	font-size: 13px;
+    font-weight: 600;
+	color:#fff;
+}
+ul.tp-hd-rgt  a {
+    font-size: 13px;
+    font-weight: 600;
+	color:#fff;
+}
+li.ned,li.wrt,li.tol{
+    margin-right: 12px;
+}
+/*-- /top-header --*/
+/*-- header --*/
+.header {
+    background-color: var(--main-color);
+    margin: 0;
+	padding: 10px 0 8px;
+}
+.logo a {
+    display: block;
+}
+.logo {
+    float: left;
+	 margin-right: 60px;
+}
+.lock {
+    float: right;
+    margin-top: 9px;
+}
+.securetxt {
+    color:var(--white);
+    line-height: 18px;
+    margin-top: 0px;
+	font-size: 14px;
+	font-weight:600;
+}
+.lock li {
+    display: inline-block;
+}
+i.fa.fa-lock {
+    color:var(--white);
+    font-size: 2em;
+    padding-right: 10px;
+}
+/*-- /header --*/
+.home{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .home .content{
+    text-align: center;
+  }
+  
+  .home .content h3{
+    font-size: 1.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  }
+  
+  .home .content p{
+    font-size: 1rem;
+    color:#fff;
+    padding:.5rem 0;
+  }
+  
+  .home .video-container video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+
+/* Styles for footer section */
+.footer {
+    background-color: #002068;
+    padding: 50px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.box h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.box a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s linear;
+}
+
+.box a:hover {
+    color: var(--green);
+    transition: .2s linear;
+}
+
+.box i {
+    margin-right: 5px;
+}
+
+.footer .credit {
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--white);
+    font-size: 1.5rem;
+    color:white;
+}
+.footer .credit span{
+  color:green;
+}
+
+.footer-btm li {
+    display: inline-block;
+    margin: 10px 10px;
+	font-size: 20px;
+    color:var(--white);
+}
+
+.footer-btm li a {
+    font-size: 15px;
+    color:var(--white);
+    display: inline-block;
+    padding: 5px 8px;
+    
+}
+.footer-btm li a:hover{
+    color:var(--green);
+}
+.footer-btm {
+    background:var(--green);
+    padding: 0.5em 0;
+	text-align:center;
+}
+/*-- /footer --*/
+/*about us start*/
+/* Style for the section containing the image and content */
+.home-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+  }
+  .home-about .image {
+    flex: 1;
+    object-fit: cover;
+  }
+  /* Style for the content */
+  .home-about .content {
+    flex: 2;
+    
+  }
+  /* Style for the heading */
+  .home-about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the paragraph */
+  .home-about p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+/* home about us ends*/
+    /* Style for the text */
+    .container h3{
+      color:var(--main-color);
+      text-align: center;
+      margin-top: 0px;
+    }
+    .about p{
+      text-transform: none;
+      text-align: center;
+      font-size:large;
+    }
+    /* about us ends*/
+
+
+
+  .packagecontainer {
+      position: relative;
+    }
+    /* Style for the image */
+    .packagecontainer img {
+      width: 100%;
+      height: 400px;
+    }
+    
+    /* Style for the text */
+    .packagecontainer h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:#002068;
+      text-align: center;
+      font-weight: bolder;
+    }
+    .packagecontainer h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:rgb(64, 0, 255);
+      text-align: center;
+      
+    }
+    
+.rom-info {
+    background: rgba(63, 132, 177, 0.79);
+    padding: 1em 2em;
+}
+.rom-info h3 {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 700;
+}
+.rom-info p {
+    font-size: 15px;
+    margin-top: 0.5em;
+    color: #fff;
+    line-height: 1.7em;
+}
+.rt-left {
+    float: left;
+}
+.rt-right {
+    float: right;
+}
+.rom-info h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+}
+.rom-btm {
+    margin-top: 2em;
+	box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.37);
+}
+.room-bottom h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--green);
+}
+.room-bottom {
+    padding: 2em 0;
+}
+.rom-btm h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.rom-btm p {
+    font-size: 15px;
+    color: #999;
+}
+.rom-btm h6 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0.5em 0;
+    color:var(--green);
+}
+.room-right {
+    text-align: right;
+    padding: 3em 2em;
+}
+.room-midle {
+    padding: 1em;
+}
+.rom-btm h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #999;
+}
+/*-- /rooms --*/
+
+/****booking style start***/
+.bookig .book-form{
+    padding:2rem;
+    background:--white;
+  }
+  .booking .book-form .flex{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+  
+  }
+  .booking .book-form .flex .inputBox{
+  flex:1 1 41rem;
+  }
+  .booking .book-form .flex .inputBox input{
+    width:100%;
+    padding:1.2rem 1.4rem;
+    font: size 1.6rem;
+    color:black;
+    text-transform:none;
+    margin-top:1.5rem;
+    border:var(-border);
+  }
+  booking .book-form .flex .inputBox input:focus{
+    background: black;
+    color:white;
+  }
+  booking .book-form .flex .inputBox input:focus::placeholder{
+    color:white;
+  }
+  .booking .book-form .flex .inputBox span{
+    font-size:1.5rem;
+    color:grey;
+  
+  }
+  
+  
+  /****booking style start***/
+
+/*-- //Sign up --*/
+.modal-header {
+    border-bottom: 1px solid #fff !important;
+}
+
+/*-- package details --*/
+.selectroom {
+    padding: 5em 0 3em;
+}
+.packagedetails {
+    padding: 2em;
+    box-shadow: 0px 0px 10px -4px #000;
+    margin-bottom: 2em;
+}
+.selectroom_right li {
+    display: inline-block;
+    width: 21%;
+}
+.grand {
+    text-align: right;
+}
+.selectroom_right h2 {
+	font-size: 1.7em;
+    color: #999;
+    font-weight: 600;
+    margin: 0;
+}	
+.selectroom_right h3 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+p.dow {
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    line-height: 1.8em;
+	margin-bottom:1em;
+}
+.selectroom_right p {
+    font-size: 15px;
+    line-height: 1.6em;
+    font-weight: 300;
+    color: #999;
+}
+.selectroom_right ul {
+    margin-top: 1em;
+}
+.selectroom_right h6 {
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+}
+.selectroom_right h4 {
+    font-size: 1.2em;
+    line-height: 1.8em;
+	font-weight:600;
+}
+.selectroom_right span {
+    font-weight: 700;
+}
+.selectroom-info li {
+    display: inline-block;
+}
+li.nam {
+    width: 22%;
+}
+li.mr
+{
+    width: 12%;
+}
+li.mr select {
+    padding: 4px 5px!important;
+    width: 72%;
+    color: #9E9E9E;
+    margin-top: 18px;
+	border:none;
+    border-bottom:1px solid rgba(0,0,0,.12);
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.selectroom input[type="text"] {
+    width: 92%;
+    color: #9E9E9E;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 0px;
+    border: none;
+    border-bottom:1px solid rgba(0,0,0,.12);
+    margin-top: 10px;
+}
+.selectroom-info ul {
+    margin-top: 3em;
+}
+li.spe {
+    width: 100%;
+    margin-top: 3em;
+}
+li.spe  input[type="text"] {
+    width: 100%;
+}
+
+/*-- login --*/
+.login{
+    background-color: var(--main-color);
+}
+.login-right{
+	float:center;
+	width:100%;
+    background-color: white;
+}
+.login-right h3{
+    color: #727272;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+
+}
+.login-right input[type="text"] ,.login-right input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-weight: normal;
+    background: none;
+    border: 1px solid #E6E4E4;
+    color: black;
+    outline: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.login-right h4{
+	color:#48cfc1;
+	font-size:12px;
+	margin:20px 0;
+}
+.login-right h4 a{
+	color:#727272;
+	text-decoration:none;
+}
+.login-right h4 a:hover{
+	color:#A9A8A8;
+}
+.login-grids p a {
+	color:#727272;
+}
+.login-right input[type="submit"] {
+  background:var(--green);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px;
+  transition: 0.5s all;
+ margin-top:20px;
+}
+.login-right input[type="submit"]:hover {
+	background:#3F84B1;
+}
+.privacy h3 {
+    color:var(--green);
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.privacy {
+    padding: 5em 0;
+}
+
+.contact {
+    padding: 3em 0;
+}
+.contact h3 {
+    margin-bottom: 0em;
+}
+.bann-info1 {
+    padding: 3em 4em 0em;
+}
+.bann-info {
+    padding: 3em 0;
+}
+.bann-info1 h3 {
+    font-size: 1.7em;
+}
+
+.rooms-top {
+    min-height: 295px;
+    padding: 12em 0 0;
+}
+
+.selectroom {
+    padding: 3em 0 1em;
+}
+@media (max-width:991px){
+ul.nav.navbar-nav li a {
+    font-size: 13px;
+    padding: 5px 0px;
+}
+.footer-btm li {
+    margin: 0px 4px;
+    font-size: 13px;
+}
+}
+
+.privacy p {
+    font-size: 15px;
+}
+
+.leave-comment input[type="text"], .leave-comment input[type="email"], .leave-comment textarea {
+    width: 49.1%;
+}
+
+.rom-info h3 {
+    font-size: 1.5em;
+}
+.rooms-top {
+    min-height: 247px;
+    padding: 9em 0 0;
+}
+.room-midle {
+    padding: 0.5em 0.5em;
+    float: left;
+    width: 51%;
+}
+.room-left {
+    float: left;
+    width: 30%;
+}
+.room-left img{
+    height:150px;
+    width:300px;
+    object-fit: cover;
+}
+.room-right {
+    padding: 2em 1em;
+    float: left;
+    width: 19%;
+}
+.selectroom_left {
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+.selectroom_right {
+    padding: 10px;
+}
+
+@media (max-width:768px){
+.logo {
+    margin-right: 30px;
+}
+}
+
+@media (max-width:736px){
+.footer-btm li {
+    display: block;
+    margin: 10px 0;
+}
+.footer-btm {
+    padding: 0;
+}
+.navbar-toggle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	margin-right: 0px;
+}
+.navbar-default .navbar-toggle {
+    border-color: #727272;
+}
+.navbar-toggle .icon-bar {
+    width: 26px;
+    height: 3px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #727272;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #727272;
+}
+ul.nav.navbar-nav li a {
+    font-size: 15px;
+    padding: 5px 0px;
+    display: block;
+    font-weight: bolder;
+}
+.navbar-nav {
+    margin: 7.5px 0px;
+}
+nav.cl-effect-1 {
+    padding: 0em 0 1em;
+}
+
+.rom-info p {
+    font-size: 13px;
+}
+.room-right {
+    padding: 2em 0.5em;
+}
+}
+
+@media (max-width:640px){
+.securetxt {
+    line-height: 17px;
+    font-size: 13px;
+}
+i.fa.fa-lock {
+    font-size: 1.7em;
+    padding-right: 4px;
+}
+.logo {
+    margin-right: 20px;
+}
+
+.rt-left {
+    width: 74%;
+}
+
+.room-left {
+    width: 27%;
+}
+.room-right {
+    width: 22%;
+}
+}
+
+@media (max-width:568px){}
+
+@media (max-width:480px){
+.logo a {
+    font-size: 1.7em;
+}
+.logo {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+li.hm, li.prnt {
+    margin-right: 2px;
+}
+
+.rooms-top {
+    min-height: 211px;
+    padding: 6em 0 0;
+}
+.rom-info h3 {
+    font-size: 1.1em;
+}
+.rom-info p {
+    font-size: 12px;
+}
+.rom-info {
+    padding: 1em 1em;
+}
+.room-map {
+    margin: 2em 0;
+}
+.room-map iframe {
+    min-height: 200px;
+}
+
+.room-right {
+    width: 23%;
+}
+.room-midle {
+    width: 50%;
+}
+.rom-btm p {
+    font-size: 14px;
+    color: #999;
+}
+
+.admin-right p {
+    font-size: 13px;
+}
+
+.privacy p {
+    font-size: 13px;
+}
+
+.login-right {
+    float: none;
+    width: 100%;
+}
+}
+@media (max-width:414px){
+ul.tp-hd-rgt a {
+    font-size: 11px;
+}
+ul.tp-hd-rgt li {
+    font-size: 11px;
+}
+ul.tp-hd-lft a {
+    font-size: 11px;
+}
+
+.privacy h3 {
+    margin-bottom: 0em;
+}
+.privacy p {
+    font-size: 14px;
+}
+.privacy {
+    padding: 2em 0;
+}
+
+.admin {
+    padding: 1em;
+    margin: 1em 0 2em;
+}
+.leave-comment input[type="text"], .leave-comment input[type="email"], .leave-comment textarea {
+    width: 100%;
+}
+
+.rom-info {
+    padding: 0.7em;
+}
+.rooms-top {
+    min-height: 186px;
+    padding: 5em 0 0;
+}
+
+.room-left {
+    width: 100%;
+    padding: 0;
+}
+.room-midle {
+    width: 100%;
+    padding-left: 12px;
+}
+.room-right {
+    width: 100%;
+    padding: 0;
+}
+li.nam {
+    width: 100%;
+    margin-bottom: 1em;
+}
+li.mr {
+    width: 46%;
+    margin-bottom: 1em;
+}
+.selectroom_right li {
+    width: 33.33%;
+}
+.selectroom_right p {
+    font-size: 14px;
+}
+.selectroom {
+    padding: 2em 0 0em;
+}
+
+.login-right input[type="submit"] {
+    font-size: 14px;
+}
+
+@media (max-width:320px){
+i.fa.fa-home {
+    font-size: 20px;
+}
+ul.tp-hd-lft a {
+    font-size: 12px;
+}
+ul.tp-hd-lft {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.logo {
+    margin-bottom: 2px;
+}
+ul.tp-hd-rgt {
+    float: left;
+    width: 100%;
+}
+ul.tp-hd-rgt li {
+    font-size: 12px;
+}
+ul.tp-hd-rgt a {
+    font-size: 12px;
+}
+li.ned, li.wrt, li.tol {
+    margin-right: 20px;
+}
+.top-header {
+    height: 62px;
+    line-height: 23px;
+    padding: 0.5em 0;
+}
+.securetxt {
+    line-height: 17px;
+    font-size: 12px;
+}
+.privacy p {
+    font-size: 13px;
+}
+.privacy {
+    padding: 1.5em 0;
+}
+.privacy h4 {
+    margin: 1em 0 0;
+}
+.con-top {
+    width: 100%;
+	margin-top: 1em;
+}
+.contact {
+    padding: 1.5em 0;
+}
+.contact h4 {
+    margin-bottom: 0.3em;
+}
+.contact-left {
+    padding: 0;
+}
+.services-icon {
+    width: 100px;
+    height: 100px;
+    line-height: 111px;
+}
+.admin-right p {
+    font-size: 13px;
+}
+.admin {
+    padding: 1em;
+    margin: 1em 0 1em;
+}
+
+.rom-info h5 {
+    font-size: 1.1em;
+    text-align: center;
+}
+.rom-info h3 {
+    font-size: 0.95em;
+}
+.rom-info p {
+    font-size: 11px;
+    line-height: 1.3em;
+}
+.rooms-top {
+    min-height: 165px;
+    padding: 4em 0 0;
+}
+.packagedetails {
+    padding: 1em;
+}
+.packagedetails .gap-2{
+    gap:20px;
+} 
+.selectroom-info ul {
+    margin-top: 1em;
+}
+.selectroom_right p {
+    font-size: 13px;
+}
+.selectroom_right h6 {
+    font-size: 0.9em;
+}
+.selectroom_right h3 {
+    font-size: 1.5em;
+}
+.login-right input[type="submit"] {
+    font-size: 12px;
+}
+.login-right input[type="text"], .login-right input[type="password"] {
+    font-size: 12px;
+}
+}
+}
